@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule}   from '@angular/forms';
 import {
   MatButtonModule,
   MatInputModule,
@@ -22,6 +23,7 @@ import 'hammerjs';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
 
     // Angular Material
     MatButtonModule,

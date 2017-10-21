@@ -9,20 +9,92 @@
   </div>
 </div>
 
-<div class="headerImageContainer">
-</div>
+<img class="headerImage" src="/assets/Portofolio/homeless_hostel.jpg" alt="headerImage">
 
 <div class="social">
-  <button mat-mini-fab color="accent" class="icon-btn">
+  <button mat-mini-fab color="primary" class="icon-btn">
       <img src="/assets/f-icon.png" class="icon">
   </button>
-  <button mat-mini-fab color="accent" class="icon-btn">
+  <button mat-mini-fab color="primary" class="icon-btn">
       <img src="/assets/f-icon.png" class="icon">
   </button>
-  <button mat-mini-fab color="accent" class="icon-btn">
+  <button mat-mini-fab color="primary" class="icon-btn">
       <img src="/assets/f-icon.png" class="icon">
   </button>
-  <button mat-mini-fab color="accent" class="icon-btn">
+  <button mat-mini-fab color="primary" class="icon-btn">
       <img src="/assets/f-icon.png" class="icon">
   </button>
+</div>
+
+<div class="aboutMeContainer">
+  <img class="personalPic" src="" alt="">
+
+  <div class="aboutMeTextcontainer">
+    <h1 class="aboutMeHeader">About me</h1>
+    <p class="aboutMePara">hello</p>
+    <p class="aboutMePara">hello</p>
+    <p class="aboutMePara">hello</p>
+  </div>
+</div>
+
+<mat-grid-list class="imageList" cols="3" rowHeight="2:1">
+  <mat-grid-tile>
+    <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/sofa-gruppe.jpg" alt="sofa gruppe">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/sofa-gruppe.jpg" alt="sofa gruppe">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/puff.jpg" alt="puff">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/sofa-gruppe.jpg" alt="sofa gruppe">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/puff.jpg" alt="puff">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/sofa-gruppe.jpg" alt="sofa gruppe">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+      <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/puff.jpg" alt="puff">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/sofa-gruppe.jpg" alt="sofa gruppe">
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+      <img class="imageInList" src="/assets/Portofolio/NKF/Eksponerings-design/puff.jpg" alt="puff">
+  </mat-grid-tile>
+</mat-grid-list>
+
+<div class="emailContainer">
+  <div class="mailForm">
+    <form #f="ngForm" (ngSubmit)="send(f)">
+      <h2 class="mailHeader">
+        <i class="material-icons">mail_outline</i>
+        Send meg en email
+      </h2>
+
+      <div class="inputContainer">
+        <mat-form-field class="from">
+          <input matInput type="email" name="from" placeholder="Fra" ngModel required>
+        </mat-form-field>
+        <mat-form-field class="subject">
+          <input matInput type="text" name="subject" placeholder="Emne" ngModel required>
+        </mat-form-field>
+        <mat-form-field class="message">
+          <textarea matInput name="message" rows="10" cols="400" placeholder="Email tekst" ngModel required></textarea>
+        </mat-form-field>
+        <button mat-raised-button class="sendButton">Send</button>
+      </div>
+    </form>
+  </div>
 </div>

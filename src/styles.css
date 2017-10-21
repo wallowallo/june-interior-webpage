@@ -2,6 +2,5 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
-  background: url('/assets/Portofolio/homeless_hostel.jpg') no-repeat;
-  background-size: cover;
+  margin: 0;
 }
