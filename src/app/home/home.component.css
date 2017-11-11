@@ -14,10 +14,26 @@
 }
 
 .icon {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 1.9rem;
+  height: 1.9rem;
   position: center;
-  margin: -0.5rem auto;
+  margin: -0.42rem auto;
+  z-index: 1000;
+}
+
+.iconLinkedin {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: center;
+  margin: -0.2rem auto;
+  z-index: 10000;
+}
+
+.icon-insta {
+  width: 1.4rem;
+  height: 1.4rem;
+  position: center;
+  margin: -0.2rem auto;
   z-index: 1000;
 }
 
@@ -43,25 +59,24 @@ button.icon-btn {
   left: 2rem;
 }
 
-.personalPic {
-  display: inline;
-  float: left;
-  width: 40vw;
-  height: 70vh;
-  background-color: red;
-}
-
-.aboutMeTextcontainer {
+.aboutMeCardContainer {
   display: inline;
   float: right;
   width: 60vw;
-  height: 70vh;
+  height: 95vh;
   margin: 0;
 }
 
+.aboutMeCard {
+  width: 40vw;
+  height: 60vh;
+  margin: 9rem auto;
+  opacity: 0.95;
+}
+
 .aboutMeHeader {
-  margin: 5rem;
-  width: 15rem;
+  padding: 3rem;
+  width: 10rem;
 }
 
 .aboutMePara {
@@ -69,10 +84,13 @@ button.icon-btn {
   margin-top: 2rem;
 }
 
-.aboutMeConatiner {
+.aboutMeContainer {
     display: inline-block;
+    background-image: url('/assets/JPG/taket_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
-    height: 70vh;
+    height: 95vh;
 }
 
 .imageList {
@@ -90,7 +108,7 @@ button.icon-btn {
   display: inline-block;
   margin: 0;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background: gainsboro;
 }
 

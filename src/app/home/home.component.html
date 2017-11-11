@@ -1,39 +1,36 @@
 <div class="toolbar" color="primary">
   <div class="headerButtons">
     <button mat-button color="accent">Hjem</button>
-    <button mat-button color="accent">Om meg</button>
-    <button mat-button color="accent">Styling</button>
-    <button mat-button color="accent">Kontakt</button>
+    <button mat-button color="accent" (click)="scrollToAboutMe()">Om meg</button>
+    <button mat-button color="accent" (click)="scrollToStyling()">Styling</button>
+    <button mat-button color="accent" (click)="scrollToEmail()">Kontakt</button>
     <button mat-button color="accent">Skole prosjekt</button>
     <button mat-button color="accent">Arbeid</button>
   </div>
 </div>
 
-<img class="headerImage" src="/assets/Portofolio/homeless_hostel.jpg" alt="headerImage">
+<img class="headerImage" src="/assets/JPG/styling_4sv.jpg" alt="headerImage">
 
 <div class="social">
   <button mat-mini-fab color="primary" class="icon-btn">
       <img src="/assets/f-icon.png" class="icon">
   </button>
   <button mat-mini-fab color="primary" class="icon-btn">
-      <img src="/assets/f-icon.png" class="icon">
+      <img src="/assets/JPG/linked.png" class="iconLinkedin">
   </button>
   <button mat-mini-fab color="primary" class="icon-btn">
-      <img src="/assets/f-icon.png" class="icon">
-  </button>
-  <button mat-mini-fab color="primary" class="icon-btn">
-      <img src="/assets/f-icon.png" class="icon">
+      <img src="/assets/JPG/insta.png" class="icon-insta">
   </button>
 </div>
 
 <div class="aboutMeContainer">
-  <img class="personalPic" src="" alt="">
-
-  <div class="aboutMeTextcontainer">
-    <h1 class="aboutMeHeader">About me</h1>
-    <p class="aboutMePara">hello</p>
-    <p class="aboutMePara">hello</p>
-    <p class="aboutMePara">hello</p>
+  <div class="aboutMeCardContainer">
+    <mat-card class="aboutMeCard">
+      <h1 class="aboutMeHeader">About me</h1>
+      <p class="aboutMePara">hello</p>
+      <p class="aboutMePara">hello</p>
+      <p class="aboutMePara">hello</p>
+    </mat-card>
   </div>
 </div>
 

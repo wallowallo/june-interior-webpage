@@ -29,4 +29,19 @@ export class HomeComponent {
      });
     form.reset();
   }
+
+  scrollToAboutMe() {
+    document.body.scrollTop = 760; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 760; // For IE and Firefox
+  }
+
+  scrollToStyling() {
+    document.body.scrollTop = 1487; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 1487; // For IE and Firefox
+  }
+
+  scrollToEmail() {
+    document.body.scrollTop = 2250; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 2250; // For IE and Firefox
+  }
 }
