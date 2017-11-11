@@ -1,0 +1,14 @@
+.toolbar {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  background: white;
+  z-index: 1000;
+}
+
+.headerButtons {
+  width: 50%;
+  margin: 1.5rem auto;
+}

@@ -13,12 +13,24 @@ import {
 } from '@angular/material';
 
 import { HomeComponent } from './home/home.component';
+import { SchoolProjectComponent } from './school-project/school-project.component';
+import { WorkComponent } from './work/work.component';
+import { NavComponent } from './nav/nav.component';
+import { SocialComponent } from './social/social.component';
+
+import { ModalGalleryModule } from 'angular-modal-gallery';
+import { AppRoutingModule } from './app-routing.module';
 
 import 'hammerjs';
+import 'mousetrap';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    SchoolProjectComponent,
+    WorkComponent,
+    NavComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
@@ -32,9 +44,13 @@ import 'hammerjs';
     MatCardModule,
     MatGridListModule,
     MatTabsModule,
-    MatToolbarModule
+    MatToolbarModule,
+
+    AppRoutingModule,
+
+    ModalGalleryModule.forRoot()
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [NavComponent]
 })
 export class AppModule { }

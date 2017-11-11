@@ -1,0 +1,37 @@
+.icon {
+  width: 1.9rem;
+  height: 1.9rem;
+  position: center;
+  margin: -0.42rem auto;
+  z-index: 1000;
+}
+
+.iconLinkedin {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: center;
+  margin: -0.4rem auto;
+  z-index: 10000;
+}
+
+.icon-insta {
+  width: 1.4rem;
+  height: 1.4rem;
+  position: center;
+  margin: -0.4rem auto;
+  z-index: 10000;
+}
+
+button.icon-btn {
+  display: block;
+  margin-top: 0.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 10000;
+}
+
+.social {
+  position: fixed;
+  top: 20rem;
+  left: 2rem;
+}

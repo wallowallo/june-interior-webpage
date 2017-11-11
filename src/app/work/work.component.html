@@ -1,0 +1,12 @@
+<section id="Images32-1">
+  <modal-gallery
+    [modalImages]="images"
+    [enableCloseOutside]="true"
+    [description]="customFullDescription"
+    (hasData)="onImageLoaded($event)"
+    (close)="onCloseImageModal($event)"
+    (show)="onVisibleIndex($event)"
+    (firstImage)="onIsFirstImage($event)"
+    (lastImage)="onIsLastImage($event)">
+  </modal-gallery>
+</section>
