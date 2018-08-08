@@ -18,41 +18,155 @@ export class WorkComponent implements OnInit {
   openModalWindowObservable: boolean = false;
   imagePointerObservable: number = 0;
 
-  imagesArray: Array<Image> = [
+  designaArray: Array<Image> = [
     new Image(
-      '../assets/Portofolio/Griffith_college/Hostel02.jpg',
-      '../assets/Portofolio/Griffith_college/Hostel02.jpg', // no thumb
-      null, // no description
-      'http://www.google.com'
+      '../assets/JPG/Designa_Kjøkken/Kjøkken.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
     ),
     new Image(
-      '../assets/images/gallery/img2.png', // example with a PNG image
-      null, // no thumb
-      'Description 2',
-      null // url
+      '../assets/JPG/Designa_Kjøkken/Kjøkken1.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
     ),
     new Image(
-      '../assets/images/gallery/img3.jpg',
-      '../assets/images/gallery/thumbs/img3.png', // example with a PNG thumb image
-      'Description 3',
-      'http://www.google.com'
+      '../assets/JPG/Designa_Kjøkken/Kjøkken2.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
     ),
     new Image(
-      '../assets/images/gallery/img4.jpg',
-      null, // no thumb
-      'Description 4',
-      'http://www.google.com'
+      '../assets/JPG/Designa_Kjøkken/Kjøkken3.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
     ),
     new Image(
-      '../assets/images/gallery/img5.jpg',
-      '../assets/images/gallery/thumbs/img5.jpg',
-      null, // no description
-      null // url
-    )
+      '../assets/JPG/Designa_Kjøkken/Kjøkken4.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken5.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken6.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken7.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken8.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken9.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken10.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken11.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken12.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken13.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken14.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken15.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken16.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken17.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken18.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken19.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken20.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Kjøkken21.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Spiserom.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
+    new Image(
+      '../assets/JPG/Designa_Kjøkken/Vaskerom.jpg',
+      null,
+      'Stort og fint kjøkken',
+      null
+    ),
   ];
 
   // observable of an array of images with a delay to simulate a network request
-  images: Observable<Array<Image>> = Observable.of(this.imagesArray).delay(300);
+  images: Observable<Array<Image>> = Observable.of(this.designaArray).delay(300);
 
   // array with a single image inside (the first one)
   singleImage: Observable<Array<Image>> = Observable.of([
@@ -68,7 +182,7 @@ export class WorkComponent implements OnInit {
   // in an asynchronous way subscribing to an Observable with a delay.
   // This is not a real use-case, but it's a way to simulate a scenario where
   // you have to subscribe to an Observable to get data and to set public vars
-  imagesArraySubscribed: Array<Image>;
+  designaArraySubscribed: Array<Image>;
 
   customDescription: Description = {
     imageText: 'Look this image ',
@@ -86,19 +200,19 @@ export class WorkComponent implements OnInit {
   };
 
   private subscription: Subscription;
-  private imagesArraySubscription: Subscription;
+  private designaArraySubscription: Subscription;
 
 
   constructor() { }
 
   ngOnInit() {
-    this.imagesArraySubscription = Observable.of(null).delay(500).subscribe(() => {
-      this.imagesArraySubscribed = this.imagesArray;
-   });
+    this.designaArraySubscription = Observable.of(null).delay(500).subscribe(() => {
+      this.designaArraySubscribed = this.designaArray;
+    });
   }
 
   openImageModal(image: Image) {
-    this.imagePointer = this.imagesArray.indexOf(image);
+    this.imagePointer = this.designaArray.indexOf(image);
     this.openModalWindow = true;
   }
 
@@ -109,18 +223,10 @@ export class WorkComponent implements OnInit {
     });
   }
 
-  onImageLoaded(event: ImageModalEvent) {
-    // angular-modal-gallery will emit this event if it will load successfully input images
-  }
-
   onVisibleIndex(event: ImageModalEvent) {
-    this.customFullDescription.customFullDescription = `Custom description of visible image with index= ${event.result}`;
-  }
-
-  onIsFirstImage(event: ImageModalEvent) {
-  }
-
-  onIsLastImage(event: ImageModalEvent) {
+    const numbah = JSON.stringify(event.result);
+    const index = parseInt(numbah) - 1;
+    this.customFullDescription.customFullDescription = this.designaArray[index].description;
   }
 
   onCloseImageModal(event: ImageModalEvent) {
@@ -128,16 +234,12 @@ export class WorkComponent implements OnInit {
     this.openModalWindowObservable = false;
   }
 
-  addRandomImage() {
-    this.imagesArray.push(this.imagesArray[Math.floor(Math.random() * this.imagesArray.length)]);
-  }
-
   ngOnDestroy() {
     if (this.subscription) {
       this.subscription.unsubscribe();
     }
-    if(this.imagesArraySubscription) {
-      this.imagesArraySubscription.unsubscribe();
+    if(this.designaArraySubscription) {
+      this.designaArraySubscription.unsubscribe();
     }
   }
 }

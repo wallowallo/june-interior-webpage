@@ -17,8 +17,8 @@
 .aboutMeCard {
   width: 40vw;
   height: 60vh;
-  margin: 9rem auto;
-  opacity: 0.95;
+  margin: 8rem auto;
+  opacity: 0.8;
 }
 
 .aboutMeHeader {
@@ -31,11 +31,17 @@
   margin-top: 2rem;
 }
 
+.profilePicture {
+  display: inline;
+  width: 40vw;
+  height: 95vh;
+}
+
 .aboutMeContainer {
     display: inline-block;
-    background-image: url('/assets/JPG/taket_2.jpg');
-    background-repeat: no-repeat;
+    background-color: gainsboro;
     background-size: cover;
+    background-image: url('/assets/JPG/Styling/styling_soverom5.jpg');
     width: 100vw;
     height: 95vh;
 }
@@ -49,14 +55,18 @@
 .imageInList {
   width: 33.33vw;
   height: 33.33vh;
+  z-index: -1;
 }
 
 .emailContainer {
   display: inline-block;
   margin: 0;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background: gainsboro;
+  background-image: url('/assets/JPG/email-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .mailHeader {
@@ -81,4 +91,10 @@
 
 .material-icons {
   vertical-align: middle;
+}
+
+a.emailPic {
+  display: block;
+  margin-top: 10rem;
+  margin-left: 2rem;
 }
